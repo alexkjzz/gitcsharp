@@ -1,4 +1,12 @@
-﻿public class Employe : Personne
+﻿public interface IEmploye1
+{
+    string Nom { get; set; }
+    double Salaire { get; set; }
+
+    string Travail();
+}
+
+public class Employe : Personne, IEmploye1
 {
     public double Salaire { get; set; }
 
